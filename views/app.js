@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 app.use('/api/v1', router)
 
 if (process.env.NODE_ENV != "test") {app.listen(port, () => {
-  console.log('App Listening on http://localhost:3000')
+  console.log('App Listening on http://localhost:${port}')
 })}
 
 module.exports = app;
